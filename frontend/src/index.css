@@ -1,31 +1,29 @@
-.sidebar {
-  width: 240px;
-  min-height: 100vh;
-  background: #1e1b4b;
-  color: white;
-  padding: 30px 20px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.sidebar h2 {
-  margin-bottom: 40px;
-  text-align: center;
+.navbar input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar li {
+.nav-right {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 14px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
+  gap: 18px;
 }
 
-.sidebar li:hover {
-  background: #4e46e5f6;
+.icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: #4f46e5;
 }

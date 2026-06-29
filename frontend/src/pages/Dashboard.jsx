@@ -1,4 +1,5 @@
 import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 
 function Dashboard() {
   return (
@@ -6,6 +7,8 @@ function Dashboard() {
       <Sidebar />
 
       <div className="dashboard" style={{ flex: 1 }}>
+        <Navbar />
+
         <h1>📊 FinFlow Dashboard</h1>
 
         <div className="cards">
