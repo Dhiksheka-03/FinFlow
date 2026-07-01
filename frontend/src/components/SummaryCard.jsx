@@ -7,6 +7,7 @@ function SummaryCard({ title, amount, color }) {
       <h3>{title}</h3>
       <h2>{amount}</h2>
     </div>
+    
   );
 }
 

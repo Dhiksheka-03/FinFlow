@@ -1,22 +1,18 @@
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import SummaryCard from "../components/SummaryCard";
+import TransactionTable from "../components/TransactionTable";
 
 function Dashboard() {
   return (
     <div style={{ display: "flex" }}>
-      {/* Sidebar */}
       <Sidebar />
 
-      {/* Main Content */}
       <div className="dashboard" style={{ flex: 1 }}>
-        {/* Navbar */}
         <Navbar />
 
-        {/* Page Title */}
         <h1>📊 FinFlow Dashboard</h1>
 
-        {/* Summary Cards */}
         <div className="cards">
           <SummaryCard
             title="Total Balance"
@@ -42,6 +38,8 @@ function Dashboard() {
             color="#f59e0b"
           />
         </div>
+
+        <TransactionTable />
       </div>
     </div>
   );
