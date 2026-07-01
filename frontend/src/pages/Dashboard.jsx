@@ -1,36 +1,46 @@
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
+import SummaryCard from "../components/SummaryCard";
 
 function Dashboard() {
   return (
     <div style={{ display: "flex" }}>
+      {/* Sidebar */}
       <Sidebar />
 
+      {/* Main Content */}
       <div className="dashboard" style={{ flex: 1 }}>
+        {/* Navbar */}
         <Navbar />
 
+        {/* Page Title */}
         <h1>📊 FinFlow Dashboard</h1>
 
+        {/* Summary Cards */}
         <div className="cards">
-          <div className="card-box">
-            <h3>Total Balance</h3>
-            <h2>₹45,000</h2>
-          </div>
+          <SummaryCard
+            title="Total Balance"
+            amount="₹45,000"
+            color="#4f46e5"
+          />
 
-          <div className="card-box">
-            <h3>Total Income</h3>
-            <h2>₹60,000</h2>
-          </div>
+          <SummaryCard
+            title="Income"
+            amount="₹60,000"
+            color="#16a34a"
+          />
 
-          <div className="card-box">
-            <h3>Total Expense</h3>
-            <h2>₹15,000</h2>
-          </div>
+          <SummaryCard
+            title="Expense"
+            amount="₹15,000"
+            color="#dc2626"
+          />
 
-          <div className="card-box">
-            <h3>Savings</h3>
-            <h2>₹45,000</h2>
-          </div>
+          <SummaryCard
+            title="Savings"
+            amount="₹45,000"
+            color="#f59e0b"
+          />
         </div>
       </div>
     </div>

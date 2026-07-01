@@ -1,29 +1,15 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.summary-card {
   background: white;
-  padding: 15px 20px;
-  border-radius: 12px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.navbar input {
-  width: 250px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.summary-card h3 {
+  color: #666;
+  margin-bottom: 10px;
 }
 
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.icon {
-  font-size: 22px;
-  cursor: pointer;
-  color: #4f46e5;
+.summary-card h2 {
+  color: #222;
 }
