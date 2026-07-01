@@ -2,13 +2,14 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import SummaryCard from "../components/SummaryCard";
 import TransactionTable from "../components/TransactionTable";
+import Chart from "../components/Chart";
 
 function Dashboard() {
   return (
     <div style={{ display: "flex" }}>
       <Sidebar />
 
-      <div className="dashboard" style={{ flex: 1 }}>
+      <div className="dashboard" style={{ flex: 1, padding: "20px" }}>
         <Navbar />
 
         <h1>📊 FinFlow Dashboard</h1>
@@ -40,6 +41,8 @@ function Dashboard() {
         </div>
 
         <TransactionTable />
+
+        <Chart />
       </div>
     </div>
   );
