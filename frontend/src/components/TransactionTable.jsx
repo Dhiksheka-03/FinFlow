@@ -1,41 +1,31 @@
-function TransactionTable() {
+function TransactionTable({ transactions, deleteTransaction }) {
   return (
-    <div>
+    <div className="table-container">
       <h2>Recent Transactions</h2>
 
-      <table border="1" cellPadding="10">
+      <table border="1" cellPadding="10" style={{ width: "100%" }}>
         <thead>
           <tr>
             <th>Title</th>
             <th>Amount</th>
             <th>Type</th>
+            <th>Action</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr>
-            <td>Salary</td>
-            <td>₹50,000</td>
-            <td>Income</td>
-          </tr>
-
-          <tr>
-            <td>Groceries</td>
-            <td>₹2,500</td>
-            <td>Expense</td>
-          </tr>
-
-          <tr>
-            <td>Electricity Bill</td>
-            <td>₹1,200</td>
-            <td>Expense</td>
-          </tr>
-
-          <tr>
-            <td>Freelancing</td>
-            <td>₹10,000</td>
-            <td>Income</td>
-          </tr>
+          {transactions.map((item, index) => (
+            <tr key={index}>
+              <td>{item.title}</td>
+              <td>₹{item.amount}</td>
+              <td>{item.type}</td>
+              <td>
+                <button onClick={() => deleteTransaction(index)}>
+                  🗑 Delete
+                </button>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
